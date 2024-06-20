@@ -19,6 +19,6 @@ func hashToString(data string) string {
 func main() {  
 	originalString := "/statistics/v1alpha1/project/man-jen-e2eprj-devops/buildruns?period=-169h"  
 	hashedString := hashToString(originalString)  
-	fmt.Printf("Original string: %s\n", originalString)  
-	fmt.Printf("Hashed string: %s\n", hashedString)  
+	fmt.Println(originalString)  
+	fmt.Println(hashedString)  
 }
