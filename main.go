@@ -1,24 +1,10 @@
 package main
 
 import (
-        "crypto/sha256"
-        "encoding/hex"
-        "fmt"
+    "fmt"
+    "os"
 )
 
-
-
-
-func hashToString(data string) string {  
-	hasher := sha256.New()  
-	hasher.Write([]byte(data))  
-	hashed := hasher.Sum(nil)  
-	return hex.EncodeToString(hashed)  
-}  
-  
-func main() {  
-	originalString := "/statistics/v1alpha1/project/man-jen-e2eprj-devops/buildruns?period=-169h"  
-	hashedString := hashToString(originalString)  
-	fmt.Println(originalString)  
-	fmt.Println(hashedString)  
+func main() {
+    fmt.Fprintf(os.Stdout, "Hello world")
 }
